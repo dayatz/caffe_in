@@ -17,6 +17,7 @@ THIRDPARTY_APPS = [
 # Your project apps listed here
 PROJECT_APPS = [
     'core',
+    'cafe'
 ]
 PROJECT_APPS = ['apps.%s' % (app) for app in PROJECT_APPS]
 

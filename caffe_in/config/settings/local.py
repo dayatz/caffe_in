@@ -22,13 +22,13 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': os.environ.get(
             "CAFFE_IN_DB_NAME",
-            caffe_in),
+            'caffe_in'),
         'USER': os.environ.get(
             "CAFFE_IN_DB_USERNAME",
-            caffe_in),
+            'caffe_in'),
         'PASSWORD': os.environ.get(
             "CAFFE_IN_DB_PASS",
-            caffe_in),
+            'caffe_in'),
         'HOST': os.environ.get(
             "CAFFE_IN_DB_HOST", 'localhost'),
         'PORT': os.environ.get(
