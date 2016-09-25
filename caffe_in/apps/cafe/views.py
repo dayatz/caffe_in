@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import Cafe
+from .serializers import CafeSerializer
 
-# Create your views here.
+
+class CafeViewset(viewsets.ReadOnlyModelViewSet):
+    serializer_class = CafeSerializer
+    queryset = Cafe.objects.all()

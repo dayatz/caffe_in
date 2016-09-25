@@ -91,3 +91,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 VERSATILEIMAGEFIELD_SETTINGS = {
     'create_images_on_demand': False,
 }
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'drf_ujson.renderers.UJSONRenderer',
+    ),
+}
