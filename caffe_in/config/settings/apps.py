@@ -11,6 +11,7 @@ DEFAULT_APPS = [
 
 # Your thirdparty apps listed here
 THIRDPARTY_APPS = [
+    'rest_framework',
     'versatileimagefield',
 ]
 
